@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: linear-gradient(80deg,rgb(239, 71, 99), rgb(242, 134, 235), rgb(205, 205, 11) );
+        }
+       
+        .main{
+            height: 100px;
+            width: 100px;
+            border: 1px solid brown;
+          box-shadow: 10px 10px 60px rgb(220, 26, 26);
+             border-radius: 20%;
+            background-color: rgb(50, 240, 16);
+            
+            animation-name: anim1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            position: absolute;
+            
+           
+          
+        }
+@keyframes anim1 {
+    /* from and to method */
+
+ /* from{
+    margin-left: 0;
+    margin-top: 0;
+ }to{
+    margin-left: 500px;
+    margin-top: 0;
+    background-color: aquamarine;
+    transform:rotate(360deg)
+ } */
+/* percentage method */
+/* 0%{
+    margin-left: 0;
+    margin-top: 0;
+}
+25%{
+    margin-left: 800px;
+    margin-top: 0px;
+    background-color: beige;
+    transform: rotate(120deg);
+}
+50%{
+    margin-top: 700px;
+    margin-left: 800px;
+    background-color: blue;
+    transform: rotate(180deg);
+}
+75%{
+    margin-left: 0;
+    margin-top: 700px;
+    background-color: brown;
+    transform: rotate(360deg);
+}
+100%{
+    margin-left: 0;
+    margin-top: 0;
+    background-color: cadetblue;
+} */
+/* circular motion */
+0%{
+    
+
+   
+    transform: rotate(0deg) translateX(-300%) rotate(0deg);
+    
+}
+100%{ 
+    
+   
+    transform: rotate(360deg) translateY(-300%) rotate(-360deg);
+    
+}
+
+
+}
+h1{
+    
+    animation-name: anim2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim2{
+from{
+ margin-left: 0;  
+ margin-top: 0;
+}to{
+    margin-left: 1000px;
+    color: rgb(14, 22, 248);
+transform: skew(20deg);
+}
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>this animation is in circular motion</h1>
+<div class="main">
+
+</div>
+    
+</body>
+</html>
